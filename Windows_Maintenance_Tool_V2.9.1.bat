@@ -681,20 +681,20 @@ if not "%customDNS2%"=="" netsh interface ip add dns name="Ethernet" %customDNS2
 echo DNS has been updated to %customDNS1% %customDNS2%
 pause
 goto choice5:retry_dns
-set /p customDNS1=Indtast primær DNS: 
+set /p customDNS1=Enter primary DNS: 
 ping -n 1 %customDNS1% >nul
 if errorlevel 1 (
-    echo Den primære DNS (%customDNS1%) kunne ikke kontaktes.
-    echo Proev igen.
+    echo The primary DNS (%customDNS1%) could not be reached.
+    echo Try again.
     goto retry_dns
 )
 
-set /p customDNS2=Indtast sekundær DNS (valgfri): 
+set /p customDNS2=Enter secondary DNS (optional): 
 if not "%customDNS2%"=="" (
     ping -n 1 %customDNS2% >nul
     if errorlevel 1 (
-        echo Den sekundære DNS (%customDNS2%) kunne ikke kontaktes.
-        echo Den vil ikke blive sat.
+        echo The secondary DNS (%customDNS2%) could not be reached.
+        echo It will not be set.
         set customDNS2=
     )
 )
