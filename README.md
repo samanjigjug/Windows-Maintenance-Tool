@@ -1,6 +1,6 @@
 # Windows Maintenance Tool 🚀
 
-![Version](https://img.shields.io/badge/version-v2.9.3-brightgreen)
+![Version](https://img.shields.io/badge/version-v2.9.4-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
 A powerful Windows maintenance toolkit in a single Batch script.
