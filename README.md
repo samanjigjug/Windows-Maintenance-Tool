@@ -1,45 +1,89 @@
-# Windows Maintenance Tool 🚀
 
-![Version](https://img.shields.io/badge/version-v2.9.4-blue)
+# 🖥️ Windows Maintenance Tool
+
+![Version](https://img.shields.io/badge/version-v2.9.4-green)
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-A powerful Windows maintenance toolkit in a single Batch script.
+A powerful, all-in-one Windows maintenance toolkit built entirely in Batch. Designed for power users, sysadmins, and curious tinkerers.
+
+---
 
 ## 📸 Screenshot
-![d8753738c59affb607ea5d821a1f1c83](https://github.com/user-attachments/assets/6ce253bb-5670-4070-94e3-95c3f9281867)
+![8bd720f29d619c518a010b9ba5bc20d3](https://github.com/user-attachments/assets/8440e020-f679-4af5-8f8b-cb5c03dfa667)
 
+
+---
 
 ## ✅ Features
-- Run SFC, DISM, CHKDSK, Windows Update repair...
+
+- Run essential repair tools: `SFC`, `DISM`, `CHKDSK`
+- Windows Update Fix Utility (new in v2.9.4)
 - Auto-detect active network adapters
-- Set DNS (Google, Cloudflare, Custom)
-- Generate system, network, driver reports
-- Clean temp files and optionally browser cache
+- Configure DNS (Google, Cloudflare, or custom)
+- Clean temp files, Windows logs, and browser cache (optional)
+- Generate and save detailed reports:
+  - System Info
+  - Network Configuration
+  - Driver List
+- Easy-to-use menu interface with colorful output
 
-## 📥 Installation
-1. Download `.bat` and run **as Administrator**.
-2. Auto-elevation is built in — script restarts itself if needed.
-3. Choose your action from the menu.
+---
 
-## 📝 Outputs
-Report files saved to your Desktop:
-- System_Info_*.txt  
-- Network_Info_*.txt  
-- Driver_List_*.txt
+## ⚙️ Installation
 
-## 🧪 Common Issues & FAQ
-**Q: Script didn't restart as Admin?**  
-A: Ensure UAC is enabled and `.bat` is right-clicked → Run as administrator.
+1. Download the `.bat` file.
+2. **Right-click → Run as Administrator** (auto-elevation supported).
+3. Follow the interactive menu.
 
-**Q: "Clear Browser Cache" crashes?**  
-A: Still under testing — feel free to submit an issue with browser and Windows version.
+> ⚠️ Script output may appear in your system language (e.g. Danish). This is normal.
+
+---
+
+## 📝 Output Files
+
+Saved to your Desktop for easy access:
+
+- `System_Info_YYYY-MM-DD.txt`
+- `Network_Info_YYYY-MM-DD.txt`
+- `Driver_List_YYYY-MM-DD.txt`
+
+---
+
+## 🧪 Troubleshooting & FAQ
+
+**Q: The script didn’t restart as Admin?**  
+A: Make sure UAC is enabled. Right-click the file and select **Run as Administrator**.
+
+**Q: Windows messages show in Danish/German/etc.?**  
+A: The script uses native Windows tools. Output language follows your OS install language.
+
+**Q: Browser cache clear crashes?**  
+A: This feature is in beta. Report issues with your browser and OS version.
+
+---
+
+## ✍️ Changelog (v2.9.4)
+
+- ➕ Added `choice23`: Reset Windows Update Services tool
+- 🚀 Services included: `wuauserv`, `cryptsvc`, `appidsvc`, `bits`
+- ♻️ Utility returns to main menu on completion
+- 🧼 Small text polish, output clarity improvements
+
+---
 
 ## 🤝 Contributing
-PRs, issues and suggestions are welcome—see the [CONTRIBUTING.md]() for details.
+
+Pull requests, issues, and feedback are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
 
 ## 📜 License
-MIT License — see `LICENSE` file.
 
-## 📎 Related Projects
-- [macOS Service Script (MSS)](...)
-https://github.com/ios12checker/MSS-Mac-Service-Script
+Licensed under the MIT License. See [`LICENSE`](LICENSE) for full details.
+
+---
+
+## 🔗 Related Projects
+
+- [🍎 MSS – Mac Service Script](https://github.com/ios12checker/MSS-Mac-Service-Script)
