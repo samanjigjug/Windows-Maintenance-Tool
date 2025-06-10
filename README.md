@@ -36,7 +36,7 @@ A powerful, all-in-one Windows maintenance toolkit built entirely in Batch. Desi
 2. **Right-click → Run as Administrator** (auto-elevation supported).
 3. Follow the interactive menu.
 
-> ⚠️ Script output may appear in your system language (e.g. Danish). This is normal.
+> ⚠️ Script output may appear in your system language (e.g. English, etc). This is normal.
 
 ---
 
