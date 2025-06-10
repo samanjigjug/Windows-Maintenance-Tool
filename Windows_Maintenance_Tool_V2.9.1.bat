@@ -764,6 +764,7 @@ systeminfo > "%REPORT1%"
 
 echo Writing network info to %REPORT2% ...
 ipconfig /all > "%REPORT2%"
+route print >> "%REPORT2%"
 
 echo Writing driver list to %REPORT3% ...
 driverquery > "%REPORT3%"
