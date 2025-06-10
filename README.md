@@ -74,7 +74,7 @@ A: This feature is in beta. Report issues with your browser and OS version.
 
 ## 🤝 Contributing
 
-Pull requests, issues, and feedback are welcome! See [CONTRIBUTING.md]((https://github.com/ios12checker/Windows-Maintenance-Tool/blob/main/CONTRIBUTING)) for guidelines.
+Pull requests, issues, and feedback are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
