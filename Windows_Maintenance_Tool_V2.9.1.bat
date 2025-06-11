@@ -471,7 +471,8 @@ goto menu
 :choice14
 cls
 echo Exiting script...
-exit
+goto exit
+
 
 
 :custom_dns
@@ -776,3 +777,5 @@ echo - Network_Info_2025-06-08.txt
 echo - Driver_List_2025-06-08.txt
 pause
 goto menu
+
+:exit
